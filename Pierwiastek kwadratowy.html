@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pierwiastek kwadratowy</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial;
+            text-align: center;
+            background: linear-gradient(lightgreen, lightblue);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+        }
+
+        #wynik {
+            background-color: white;
+            padding: 20px;
+            margin: 30px auto;
+            width: 400px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Pierwiastek kwadratowy</h1>
+
+    <div id="wynik"></div>
+
+    <script>
+        let liczba = prompt("Podaj liczbę:");
+
+        let wynik = Math.sqrt(liczba);
+
+        document.getElementById("wynik").innerHTML =
+            "Pierwiastek kwadratowy z liczby " + liczba +
+            " wynosi: " + wynik;
+    </script>
+
+</body>
+</html>
+
